@@ -1,0 +1,40 @@
+{
+  "name": "@passmcp/sdk",
+  "version": "0.0.10",
+  "description": "Apache-2.0 TypeScript MCP client and server SDK with capability-gated 2026-07-28 conformance and offline passmcp attestation verification.",
+  "license": "Apache-2.0",
+  "author": "Sebastien Rousseau <sebastian.rousseau@gmail.com>",
+  "type": "module",
+  "exports": {
+    ".": "./src/index.ts"
+  },
+  "files": [
+    "src",
+    "LICENSE",
+    "README.md"
+  ],
+  "engines": {
+    "node": ">=22.6.0"
+  },
+  "scripts": {
+    "build": "node --no-warnings=ExperimentalWarning scripts/build.mjs",
+    "test": "node --test test/*.test.ts",
+    "lint": "node scripts/lint.mjs",
+    "example": "node examples/quickstart.ts"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sebastienrousseau/passmcp-sdk-typescript.git"
+  },
+  "homepage": "https://github.com/sebastienrousseau/passmcp-sdk-typescript",
+  "bugs": {
+    "url": "https://github.com/sebastienrousseau/passmcp-sdk-typescript/issues"
+  },
+  "keywords": [
+    "mcp",
+    "model-context-protocol",
+    "passmcp",
+    "in-toto",
+    "attestation"
+  ]
+}
